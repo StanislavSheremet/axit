@@ -7,10 +7,22 @@
 
 .header-title {
   background-color: #000000;
-  width: 1400px;
+  max-width: 1100px;
   height: 72px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header-items-h4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  margin-right: 50px;
+  margin-bottom: 22px;
 }
 
 .title-header {
@@ -37,11 +49,18 @@
 .header-item-block {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .menu-conteiner {
   height: 640px;
-  width: 1400px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1100px;
   background-color: #9a9a9a;
 }
 
@@ -54,7 +73,6 @@
 .logo-menu-container {
   margin-left: 150px;
   margin-top: 110px;
-  margin-right: 1075px;
   margin-bottom: 33px;
 }
 
@@ -98,12 +116,18 @@
 }
 
 .container-footer {
+  display: flex;
   height: 105px;
-  width: 1400px;
+  max-width: 1100px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .conteiner-text {
-  height: 105px;
+  height: max-content;
   width: max-content;
 }
 
@@ -113,7 +137,6 @@
   font-size: 20px;
   font-weight: 700;
   margin-top: 22px;
-  margin-left: 152px;
   width: max-content;
 }
 
@@ -124,11 +147,9 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  margin-left: 152px;
   width: max-content;
   margin-bottom: 22px;
 }
 
 .logo-footer {
-  margin-left: 600px;
 }
