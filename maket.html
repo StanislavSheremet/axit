@@ -13,39 +13,93 @@
   <body>
     <!--Header-->
     <header class="header-title">
-      <div class="header-item-block">
-        <div>
-          <h2 class="title-header">
-            AX<span class="title-orange-word">IT</span>
-          </h2>
-        </div>
-        <div class="header-items-h4">
-        <h4 class="header-item">Features</h4>
-        <h4 class="header-item">About</h4>
-        <h4 class="header-item">Pricing</h4>
-        <h4 class="header-item">Rewiews</h4>
-        <h4 class="header-item">Contact</h4>
+      <div class="container-wrapper">
+        <div class="header-item-block">
+          <div class="header-logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="79"
+              height="27"
+              viewBox="0 0 79 27"
+            >
+              <g>
+                <g>
+                  <image
+                    width="79"
+                    height="27"
+                    xlink:href="data:image/png;base64,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"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="header-items-h4">
+            <h4 class="header-item">Features</h4>
+            <h4 class="header-item">About</h4>
+            <h4 class="header-item">Pricing</h4>
+            <h4 class="header-item">Rewiews</h4>
+            <h4 class="header-item">Contact</h4>
+          </div>
         </div>
       </div>
     </header>
-    <div class="menu-conteiner">
-      <!--Menu description-->
-      <img class="logo-menu-container" src="logo/logo.png" alt="AXIT" />
-      <h2 class="menu-container-title">
-        MODERN AXURE TEMPLATE<br />
-        FOR BEAUTIFUL PROTOTYPES
-      </h2>
-      <img class="hr" src="logo/hr.png" alt="" />
-      <span class="content-menu-container"
-        >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br />
-        euismod bibendum laoreet. Proin gravida dolor sit amet lacus<br />
-        accumsan et viverra justo commodo.</span
-      >
-      <button class="menu-container-button">
-        <span class="name-button">Download</span>
-      </button>
+    <div class="menu-wrapper">
+      <div class="menu-container">
+        <div>
+          <!--Menu description-->
+          <img class="logo-menu-container" src="logo/logo.png" alt="AXIT" />
+          <h2 class="menu-container-title">
+            MODERN AXURE TEMPLATE<br />
+            FOR BEAUTIFUL PROTOTYPES
+          </h2>
+          <img class="hr" src="logo/hr.png" alt="" />
+          <span class="content-menu-container"
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean<br />
+            euismod bibendum laoreet. Proin gravida dolor sit amet lacus<br />
+            accumsan et viverra justo commodo.</span
+          >
+          <button class="menu-container-button">
+            <span class="name-button">Download</span>
+          </button>
+        </div>
+        <!--Registration container-->
+        <form action="action_page.php">
+          <div class="registr-container">
+            <div class="title-registr">
+              <h3 class="title-fonts">
+                Try Your <span class="title-orange-word">FREE</span> Trial Today
+              </h3>
+            </div>
+            <input
+              class="input-registr"
+              type="text"
+              placeholder="Name"
+              name="name"
+              required
+            />
+            <input
+              class="input-registr"
+              type="text"
+              placeholder="Email"
+              name="email"
+              required
+            />
+            <input
+              class="input-registr"
+              type="text"
+              placeholder="Password"
+              name="password"
+              required
+            />
+            <button class="registr-button" type="submit" class="registerbtn">
+              Get Started
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
-    <div><!--Registration container--></div>
+
     <footer class="container-footer">
       <!--Footer-->
       <div class="conteiner-text">
